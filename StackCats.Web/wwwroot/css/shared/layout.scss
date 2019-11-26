@@ -1,0 +1,81 @@
+﻿@import "../global-variables";
+
+.navbar-main {
+    background-color: $color-transparent-white;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 0 -4px 0 8px rgba(0, 0, 0, .1);
+
+    .navbar-nav {
+        @include mobile-only {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-top: 2px solid lighten($color-blue, 30);
+        }
+    }
+
+    .nav-item {
+        @include gte-small {
+            margin-right: 5px;
+        }
+
+        a.nav-link,
+        a.nav-link:visited {
+            color: $color-blue;
+        }
+
+        a.nav-link:hover {
+            color: darken($color-blue, 15);
+        }
+    }
+
+    .navbar-toggler {
+        padding: .15rem .7rem;
+        border: 2px solid lighten($color-blue, 30);
+        color: $color-blue;
+
+        .navbar-toggler-icon {
+            margin: 0;
+            line-height: 1.5em;
+        }
+
+        .navbar-toggler-text {
+            margin: -2px 0 2px 0;
+            font-size: .5em;
+        }
+    }
+}
+
+#navbar-brand-stackcats {
+    margin: -0.1em 0 -0.2em -0.1em;
+    height: 2.2em;
+}
+
+#main-wrapper {
+    background: url('../../sprites/home/bg-paws.png') repeat;
+    background-size: 200px;
+}
+
+main {
+    min-height: 480px;
+    padding: $padding-std 0;
+}
+
+footer {
+    padding: $padding-std;
+    background-color: $color-transparent-white;
+}
+
+#follow-icons {
+    .follow-icon-link{
+        text-decoration: none;
+    }
+
+    .follow-icon-image {
+        height: 32px;
+        margin-right: $margin-std;
+    }
+}
+
+#rhg-logo {
+    height: 64px;
+}

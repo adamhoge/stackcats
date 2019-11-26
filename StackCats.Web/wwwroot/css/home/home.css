@@ -1,0 +1,16 @@
+﻿#home-logo {
+  width: 60%;
+  max-width: 320px; }
+
+#summary-text {
+  font-family: Fredoka One;
+  max-width: 420px; }
+  @media (max-width: 575px) {
+    #summary-text {
+      font-size: 1.2em; } }
+  @media (min-width: 576px) {
+    #summary-text {
+      font-size: 1.3em; } }
+  @media (min-width: 768px) {
+    #summary-text {
+      font-size: 1.4em; } }

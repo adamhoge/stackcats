@@ -1,0 +1,32 @@
+#docker-compose.yml
+
+version: '2'
+ 
+services:
+  app:
+    build:
+      context:  ./
+      dockerfile: Dockerfile
+    depends_on:
+      - mariadb
+  mariadb:
+    image: mariadb:10.1
+    restart: on-failure
+    environment:
+      MYSQL_ROOT_PASSWORD: changeme
+      MYSQL_DATABASE: stack_cats
+      MYSQL_USER: changeme
+      MYSQL_PASSWORD: changeme
+    volumes:
+     - ${PWD}/mariadb:/var/lib/mysql
+  https-portal:
+    image: steveltn/https-portal:1
+    ports:
+      - '80:80'
+      - '443:443'
+    links:
+      - app
+    restart: always
+    environment:
+      DOMAINS: 'playstackcats.com -> http://app:5000'
+      STAGE: 'production'

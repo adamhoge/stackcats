@@ -1,0 +1,23 @@
+﻿@import "../global-variables.scss";
+
+#home-logo {
+    width: 60%;
+    max-width: 320px;
+}
+
+#summary-text {
+    font-family: Fredoka One;
+    max-width: 420px;
+
+    @include mobile-only {
+        font-size: 1.2em;
+    }
+
+    @include gte-small {
+        font-size: 1.3em;
+    }
+
+    @include gte-medium {
+        font-size: 1.4em;
+    }
+}

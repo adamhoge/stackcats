@@ -1,0 +1,14 @@
+﻿@import "global-variables";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $color-dark-blue;
+}
+
+a {
+    color: $color-blue;
+}
+
+a:visited {
+    color: darken($color-blue, 10);
+}

@@ -1,0 +1,53 @@
+﻿.navbar-main {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Fredoka One', cursive;
+  box-shadow: 0 -4px 0 8px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 575px) {
+    .navbar-main .navbar-nav {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border-top: 2px solid #e1eef6; } }
+  @media (min-width: 576px) {
+    .navbar-main .nav-item {
+      margin-right: 5px; } }
+  .navbar-main .nav-item a.nav-link,
+  .navbar-main .nav-item a.nav-link:visited {
+    color: #6babd3; }
+  .navbar-main .nav-item a.nav-link:hover {
+    color: #3788ba; }
+  .navbar-main .navbar-toggler {
+    padding: .15rem .7rem;
+    border: 2px solid #e1eef6;
+    color: #6babd3; }
+    .navbar-main .navbar-toggler .navbar-toggler-icon {
+      margin: 0;
+      line-height: 1.5em; }
+    .navbar-main .navbar-toggler .navbar-toggler-text {
+      margin: -2px 0 2px 0;
+      font-size: .5em; }
+
+#navbar-brand-stackcats {
+  margin: -0.1em 0 -0.2em -0.1em;
+  height: 2.2em; }
+
+#main-wrapper {
+  background: url("../../sprites/home/bg-paws.png") repeat;
+  background-size: 200px; }
+
+main {
+  min-height: 480px;
+  padding: 16px 0; }
+
+footer {
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#follow-icons .follow-icon-link {
+  text-decoration: none; }
+
+#follow-icons .follow-icon-image {
+  height: 32px;
+  margin-right: 16px; }
+
+#rhg-logo {
+  height: 64px; }

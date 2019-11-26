@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153162415-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-153162415-1');
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Stack Cats</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/bootstrap-stackcats.min.css" />
+    <link rel="stylesheet" href="~/css/shared/layout.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans&display=swap" rel="stylesheet">
+    @RenderSection("CSS", required: false)
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-main navbar-expand-sm navbar-toggleable-sm">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img id="navbar-brand-stackcats" src="~/sprites/logo-h.svg" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa fa-paw"></span>
+                    <div class="navbar-toggler-text">Menu</div>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="fa fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Media" asp-action="Index">
+                                <i class="fa fa-film"></i>
+                                Media
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="DevBlog" asp-action="Index">
+                                <i class="fa fa-book"></i>
+                                Dev Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-wrapper">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer text-muted">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-sm-6 offset-sm-3">
+                    <div>
+                        <h5>Follow the Progress</h5>
+                        <div id="follow-icons" class="mt-3">
+                            <a class="follow-icon-link" href="https://www.twitch.tv/rockhoppergames" target="_blank">
+                                <img class="follow-icon-image" src="~/sprites/shared/logo-twitch.svg" />
+                            </a>
+                            <a class="follow-icon-link" href="https://www.facebook.com/PlayStackCats/" target="_blank">
+                                <img class="follow-icon-image" src="~/sprites/shared/logo-facebook.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row my-4 text-center">
+                <div class="col-12">
+                    &copy; 2019 - Stack Cats - <a asp-area="" asp-controller="Home" asp-action="PrivacyPolicy">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
