@@ -30,6 +30,8 @@ namespace StackCats.Web.Context
         /// <returns>A flag indicating whether or not the provided email is valid.</returns>
         public bool IsValidForCreate()
         {
+            if (string.IsNullOrEmpty(RequesterEmail)) return false;
+
             return Regex.IsMatch(RequesterEmail, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
         }
     }
