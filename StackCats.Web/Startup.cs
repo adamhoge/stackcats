@@ -27,7 +27,7 @@ namespace StackCats.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ReleaseNotificationRequestContext>(item =>
-                item.UseMySql(Configuration.GetConnectionString("MariaDb")));
+    item.UseMySql(Configuration.GetConnectionString("MariaDb")));
 
             services.AddScoped<IReleaseNotificationRequestRepository, ReleaseNotificationRequestRepository>();
 
