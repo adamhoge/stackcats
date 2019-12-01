@@ -7,8 +7,11 @@
 }
 
 @section Scripts {
+    <script src="https://www.google.com/recaptcha/api.js?render=@ViewData["ReCaptchaClientKey"]"></script>
     <script src="~/js/Home/index.js"></script>
 }
+
+<input id="recaptcha-client-key" type="hidden" value="@ViewData["ReCaptchaClientKey"]" />
 
 <div class="my-5">
     <div class="container">
@@ -35,10 +38,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
-                        <label for="email-address">Email Address</label>
-                        <input type="email" class="form-control" id="email-address" aria-describedby="email-address-info" placeholder="Enter email">
-                        <small id="email-address-info" class="form-text text-muted">We'll only use your email to notify you when the game is released.</small>
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="ml-2 img-fluid" src="~/sprites/home/mail-cat.svg" />
+                        </div>
+                        <div class="col-9">
+                            <div class="form-group mb-3">
+                                <label for="email-address">Email Address</label>
+                                <input type="email" class="form-control" id="email-address" aria-describedby="email-address-info" placeholder="Enter email">
+                                <small id="email-address-info" class="form-text text-muted">Your email will not be shared and will only be used to notify you when the game is released.</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">

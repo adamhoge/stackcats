@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using StackCats.Web.Classes;
 using StackCats.Web.Context;
 using StackCats.Web.Repositories;
 
@@ -27,8 +28,10 @@ namespace StackCats.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
             services.AddDbContext<ReleaseNotificationRequestContext>(item =>
-            item.UseMySql(Configuration.GetConnectionString("MariaDb")));
+              item.UseMySql(Configuration.GetConnectionString("MariaDb")));
 
             services.AddScoped<IReleaseNotificationRequestRepository, ReleaseNotificationRequestRepository>();
 
