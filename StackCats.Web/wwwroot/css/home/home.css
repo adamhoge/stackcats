@@ -14,3 +14,6 @@
   @media (min-width: 768px) {
     #summary-text {
       font-size: 1.4em; } }
+
+#request-release-notification-spinner {
+  display: none; }

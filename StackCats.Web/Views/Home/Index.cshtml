@@ -52,8 +52,13 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind</button>
-                    <button id="submit-request-release-notification" type="submit" class="btn btn-primary">Submit</button>
+                    <button id="cancel-request-release-notification" type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind</button>
+                    <button id="submit-request-release-notification" type="submit" class="btn btn-primary">
+                        Submit
+                        <i id="request-release-notification-spinner" class="fa fa-hourglass-half fa-spin ml-1" role="status">
+                            <span class="sr-only">Submitting...</span>
+                        </i>
+                    </button>
                 </div>
             </div>
         </div>
