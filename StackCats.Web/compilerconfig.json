@@ -2,5 +2,13 @@
   {
     "outputFile": "wwwroot/css/home/home.css",
     "inputFile": "wwwroot/css/home/home.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/media/index.css",
+    "inputFile": "wwwroot/css/media/index.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/shared/layout.css",
+    "inputFile": "wwwroot/css/shared/layout.scss"
   }
 ]

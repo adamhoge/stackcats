@@ -12,5 +12,20 @@ namespace StackCats.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult Images()
+        {
+            return View();
+        }
+
+        public IActionResult Videos()
+        {
+            return View();
+        }
+
+        public IActionResult Music()
+        {
+            return View();
+        }
     }
 }

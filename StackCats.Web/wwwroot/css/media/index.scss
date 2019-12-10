@@ -1,0 +1,15 @@
+﻿@import '../global-variables.scss';
+
+.card-media {
+    max-width: 480px;
+    margin: 0 auto $margin-std auto;
+    text-align: center;
+}
+
+.card-media .card-title {
+    font-family: 'Fredoka One', cursive;
+}
+
+.card-media-quick-content {
+    height: 256px;
+}

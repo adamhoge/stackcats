@@ -60,6 +60,14 @@ main {
     padding: $padding-std 0;
 }
 
+.page-header {
+    margin: 0 0 ($margin-std * 2) 0;
+    padding: $padding-std;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    border-bottom: 5px dotted $color-blue;
+}
+
 footer {
     padding: $padding-std;
     background-color: $color-transparent-white;

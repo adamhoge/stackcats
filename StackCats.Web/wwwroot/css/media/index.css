@@ -1,0 +1,10 @@
+﻿.card-media {
+  max-width: 480px;
+  margin: 0 auto 16px auto;
+  text-align: center; }
+
+.card-media .card-title {
+  font-family: 'Fredoka One', cursive; }
+
+.card-media-quick-content {
+  height: 256px; }
