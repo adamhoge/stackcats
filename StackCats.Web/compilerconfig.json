@@ -10,5 +10,9 @@
   {
     "outputFile": "wwwroot/css/shared/layout.css",
     "inputFile": "wwwroot/css/shared/layout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/media/music.css",
+    "inputFile": "wwwroot/css/media/music.scss"
   }
 ]
