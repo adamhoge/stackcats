@@ -3,3 +3,9 @@
 
 .btn-primary {
   color: #FFFFFF !important; }
+
+.text-muted {
+  color: #cde3f0 !important; }
+
+a:hover .text-muted {
+  color: #9ac6e1 !important; }

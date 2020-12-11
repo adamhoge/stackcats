@@ -7,3 +7,11 @@
 .btn-primary {
     color: $color-white !important;
 }
+
+.text-muted {
+    color: lighten($color-blue, 25) !important;
+}
+
+a:hover .text-muted {
+    color: lighten($color-blue, 12) !important;
+}

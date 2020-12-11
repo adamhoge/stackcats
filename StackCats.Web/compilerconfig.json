@@ -14,5 +14,9 @@
   {
     "outputFile": "wwwroot/css/media/music.css",
     "inputFile": "wwwroot/css/media/music.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/bootstrap-stackcats.css",
+    "inputFile": "wwwroot/css/bootstrap-stackcats.scss"
   }
 ]
