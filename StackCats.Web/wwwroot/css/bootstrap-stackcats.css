@@ -4,8 +4,8 @@
 .btn-primary {
   color: #FFFFFF !important; }
 
-.text-muted {
+.text-primary-light {
   color: #cde3f0 !important; }
 
-a:hover .text-muted {
+a:hover .text-primary-light {
   color: #9ac6e1 !important; }
